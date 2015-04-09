@@ -38,7 +38,10 @@ def vowels_percentage(text):
         total += 1
         if c in "aeiouAEIOU":
             vowels += 1
-    return vowels / total * 100
+    if total != 0:
+        return vowels / total * 100
+    else:
+        return 0
 
 
 def word_to_char_ratio(text):
