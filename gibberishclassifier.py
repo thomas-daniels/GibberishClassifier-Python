@@ -12,7 +12,7 @@ import math
 def split_in_chunks(text, chunk_size):
     chunks = []
     for i in range(0, len(text), chunk_size):
-        chunks.append(text[i:i+chunk_size])
+        chunks.append(text[i:i + chunk_size])
     if len(chunks) > 1 and len(chunks[-1]) < 10:
         chunks[-2] += chunks[-1]
         chunks.pop(-1)
