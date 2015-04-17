@@ -60,7 +60,7 @@ def deviation_score(percentage, lower_bound, upper_bound):
 
 
 def classify(text):
-    if len(text) == 0:
+    if text is None or len(text) == 0:
         return 0.0
     ucpcp = unique_chars_per_chunk_percentage(text, 35)
     vp = vowels_percentage(text)
